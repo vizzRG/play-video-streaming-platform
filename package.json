@@ -1,0 +1,16 @@
+{
+  "name": "play",
+  "version": "1.0.0",
+  "description": "A video streaming platform for my learning",
+  "keywords": [
+    "Javascript",
+    "Backend"
+  ],
+  "license": "ISC",
+  "author": "Vishal",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
