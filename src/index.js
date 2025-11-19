@@ -1,1 +1,3 @@
-console.log("server is running");
+import connectDB from "./db/index.js";
+import "dotenv/config";
+connectDB();
