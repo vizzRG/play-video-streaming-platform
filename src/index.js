@@ -1,3 +1,26 @@
+import { app } from "./app.js";
 import connectDB from "./db/index.js";
 import "dotenv/config";
-connectDB();
+
+/*
+connectDB()
+  .then(() => {
+    app.listen(process.env.PORT, () => {
+      console.log(`Server is running on port: ${process.env.PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.log("Database Connection Failed ", err);
+  });
+*/
+(async () => {
+  try {
+    await connectDB();
+
+    app.listen(process.env.PORT, () => {
+      console.log(`Server running on port ${process.env.PORT}`);
+    });
+  } catch (error) {
+    console.log("Database Connection Failed", error);
+  }
+})();
